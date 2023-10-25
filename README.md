@@ -8,8 +8,6 @@ See the live demo here:
 
 # Diabetes Detection and A1c Score Measurement
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/yourusername/your-repo/blob/main/LICENSE)
-
 ## Overview
 
 This is a web application developed in Python using the Streamlit framework. The application serves two primary purposes:
