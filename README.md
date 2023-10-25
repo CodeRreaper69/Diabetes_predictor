@@ -37,15 +37,15 @@ The web application also offers various data visualizations, including scatter p
    cd your-repo
 
 ## Usage
-2. Install the necessary requuirements:
-   ```bash
-  pip install -r requirements.txt
+2. Install the required dependencies:
+
+   pip install -r requirements.txt
+
+   
 3.Data
 The dataset used for diabetes prediction is located in the data directory. You can find the A1c score measurement data in the same directory.
 
 Model
 The diabetes detection model is implemented using a Support Vector Machine (SVM). You can find the model implementation in the model directory.
 
-Contributing
-Contributions are welcome! If you'd like to contribute to this project, please open an issue, fork the repository, and submit a pull request.
 
