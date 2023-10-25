@@ -206,9 +206,7 @@ def main():
 
         #st.success(diagnosis)
         #calculate your A1C percentage
-        tab1,tab2 = st.tabs(["A1C % CALCULATOR","AVERAGE BLOOD GLUCOSE LEVEL"])
-
-
+    tab1,tab2 = st.tabs(["A1C % CALCULATOR","AVERAGE BLOOD GLUCOSE LEVEL"])
         with tab1:
             st.header(" :blue[KNOW YOUR A1C PERCENTAGE] ")
             b = st.radio(":green[TAKE YOUR AVERAGE BLOOD SUGAR LEVEL SAME AS ABOVE GIVEN FASTING BLOOD SUGAR LEVEL ?]",["NO","YES"])
