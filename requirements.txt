@@ -6,3 +6,4 @@ streamlit
 requests
 jsonpickle
 streamlit-lottie
+scikit-learn
