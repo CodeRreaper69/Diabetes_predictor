@@ -34,7 +34,7 @@ The web application also offers various data visualizations, including scatter p
 
    ```bash
    git clone https://github.com/CodeRreaper69/Diabetes_predictor
-   cd your-repo
+   cd Diabetes_predictor
 
 ## Usage
 2. Install the required dependencies:
