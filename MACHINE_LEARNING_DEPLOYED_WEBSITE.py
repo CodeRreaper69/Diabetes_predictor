@@ -207,52 +207,52 @@ def main():
         #st.success(diagnosis)
         #calculate your A1C percentage
     tab1,tab2 = st.tabs(["A1C % CALCULATOR","AVERAGE BLOOD GLUCOSE LEVEL"])
-        with tab1:
-            st.header(" :blue[KNOW YOUR A1C PERCENTAGE] ")
-            b = st.radio(":green[TAKE YOUR AVERAGE BLOOD SUGAR LEVEL SAME AS ABOVE GIVEN FASTING BLOOD SUGAR LEVEL ?]",["NO","YES"])
-            if b == "NO":
-                average_blood_sugar = st.number_input("Enter your average blood sugar (mg/dL) for past 2-3 months: ")
-            elif b == "YES":
-                average_blood_sugar = Glucose
+    with tab1:
+        st.header(" :blue[KNOW YOUR A1C PERCENTAGE] ")
+        b = st.radio(":green[TAKE YOUR AVERAGE BLOOD SUGAR LEVEL SAME AS ABOVE GIVEN FASTING BLOOD SUGAR LEVEL ?]",["NO","YES"])
+        if b == "NO":
+            average_blood_sugar = st.number_input("Enter your average blood sugar (mg/dL) for past 2-3 months: ")
+        elif b == "YES":
+            average_blood_sugar = Glucose
             
-            a1c_percentage = (average_blood_sugar + 46.7) / 28.7
-            number = a1c_percentage
-            decimal_places = 3
-            if average_blood_sugar == 0:
-                 formatted_number = 0
-            elif average_blood_sugar != 0.00:           
-                 formatted_number = format(number, f".{decimal_places}f")
-            with st.spinner(" WAIT "):
-                t.sleep(1)
-                st.write(" :orange[YOUR A1C percentage is: ] ",formatted_number)#getting only specified number of decimal places
-                if st.button(" CHECK IF YOU HAVE DIABETES OR NOT "):
+        a1c_percentage = (average_blood_sugar + 46.7) / 28.7
+        number = a1c_percentage
+        decimal_places = 3
+        if average_blood_sugar == 0:
+            formatted_number = 0
+        elif average_blood_sugar != 0.00:           
+            formatted_number = format(number, f".{decimal_places}f")
+        with st.spinner(" WAIT "):
+            t.sleep(1)
+            st.write(" :orange[YOUR A1C percentage is: ] ",formatted_number)#getting only specified number of decimal places
+            if st.button(" CHECK IF YOU HAVE DIABETES OR NOT "):
                     
-                    if a1c_percentage < 5.7:
-                        st.success("*NORMAL!YOU DON'T HAVE DIABETES*")
-                    elif a1c_percentage < 6.4 and a1c_percentage > 5.7:
-                        st.write("*YOU MAY BE PREDIABETEIC*")
-                    elif a1c_percentage > 6.5:
-                        st.warning(":red[*YOU MAY BE DIABETIC*]")
-        with tab2:
-            st.header(" :violet[KNOW YOUR AVERAGE BLOOD GLUCOSE USING A1C PERCENTAGE] ")
-            a1c_percentage = st.number_input("Enter your A1C percentage: ")
-            average_blood_sugar = (a1c_percentage * 28.7) - 46.7
-            number = average_blood_sugar
-            decimal_places = 3
-            if a1c_percentage == 0.00:
-                formatted_number = 0
-            elif a1c_percentage != 0.00:
-                formatted_number = format(number, f".{decimal_places}f")
-            with st.spinner(" WAIT "):
-                t.sleep(1)
-                st.write(":green[YOUR YOUR AVERAGE BLOOD GLUCOSE LEVEL IN mg/dl IS:  ] ",formatted_number)
+                if a1c_percentage < 5.7:
+                    st.success("*NORMAL!YOU DON'T HAVE DIABETES*")
+                elif a1c_percentage < 6.4 and a1c_percentage > 5.7:
+                    st.write("*YOU MAY BE PREDIABETEIC*")
+                elif a1c_percentage > 6.5:
+                    st.warning(":red[*YOU MAY BE DIABETIC*]")
+    with tab2:
+        st.header(" :violet[KNOW YOUR AVERAGE BLOOD GLUCOSE USING A1C PERCENTAGE] ")
+        a1c_percentage = st.number_input("Enter your A1C percentage: ")
+        average_blood_sugar = (a1c_percentage * 28.7) - 46.7
+        number = average_blood_sugar
+        decimal_places = 3
+        if a1c_percentage == 0.00:
+            formatted_number = 0
+        elif a1c_percentage != 0.00:
+            formatted_number = format(number, f".{decimal_places}f")
+        with st.spinner(" WAIT "):
+            t.sleep(1)
+            st.write(":green[YOUR YOUR AVERAGE BLOOD GLUCOSE LEVEL IN mg/dl IS:  ] ",formatted_number)
 
         #pass
         #error message
         #st.error(" ONE SHOULD NOT PLAY WITH THIS WEBSITE ")
 
         #SUCCESS MESSAGE
-        st.file_uploader("UPLOAD SUPPORTING MEDICAL DATA FOR YOUR ABOVE GIVEN DETAILS")
+    st.file_uploader("UPLOAD SUPPORTING MEDICAL DATA FOR YOUR ABOVE GIVEN DETAILS")
         
 
 
