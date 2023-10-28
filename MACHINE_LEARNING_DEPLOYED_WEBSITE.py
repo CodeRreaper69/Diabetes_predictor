@@ -447,7 +447,7 @@ def main():
     #about the developer
     with st.expander("CONTACT THE DEVELOPER"):
         st.write(" [LEARN MORE ABOUT THE DEVELOPER >](https://sourabh-dey-resume.streamlit.app/)")
-        st.image("profile-pic (3).png",width = 250)
+        st.image("profile-pic (5).png",width = 250)
         contact = """ <form action="https://formsubmit.co/uhddey@gmail.com" method="POST">
                  <input type="text" name="name" placeholder = "YOUR NAME" required>
                  <input type="email" name="email" placeholder = "YOUR EMAIL" required>
