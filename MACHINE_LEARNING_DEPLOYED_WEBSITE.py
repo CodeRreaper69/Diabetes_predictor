@@ -37,6 +37,7 @@ def predict_diabetes(input_data_D):
 
     if prediction[0] == 0:
         st.success('DOES NOT HAVE DIABETES')
+        st.snow()
     elif prediction[0] == 1:
         st.warning('MAY HAVE DIABETES')
 
