@@ -58,7 +58,7 @@ def main():
     #title
     st.title(" :violet[WELCOME TO DIABETES PREDICTION MODEL :stethoscope:]  " )
     #image addtion
-    st.image("DiabetesPredictioninMachineLearningusingPython20220505114933 - Copy.jpg")
+    #st.image("DiabetesPredictioninMachineLearningusingPython20220505114933 - Copy.jpg")
     
     t1 , t2 ,t3= st.tabs(["DIABETES PREDICTOR","DATA VISUALIZATIONS CORNER","VIEW THE HYPERPLANE OF THE MODEL"])
     with t1:
