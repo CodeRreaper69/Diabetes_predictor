@@ -4,6 +4,8 @@ Using machine learning and a data set, diabetes can be detected and the correspo
 
 See the live demo here:
 
+[Heart Disease & Diabetes Predictor](https://diabetes-predictor-web.streamlit.app/)
+
 
 
 # Diabetes Detection and A1c Score Measurement
