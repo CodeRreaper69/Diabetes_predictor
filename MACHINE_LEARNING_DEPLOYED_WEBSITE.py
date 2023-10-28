@@ -52,7 +52,7 @@ def main():
     def load_lottie(filepath):
         with open(filepath, "r") as f:
             return json.load(f)
-
+    st.set_page_config(page_title="MACHINE LEARNING MODEL FOR DIABETES",page_icon=" 💉",layout="wide")
     lottie_diabetes_animate = load_lottie("animation_lkfl0fus.json")
 
     
