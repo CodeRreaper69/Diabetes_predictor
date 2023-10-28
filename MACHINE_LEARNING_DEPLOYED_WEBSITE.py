@@ -160,7 +160,7 @@ def main():
                 
             Age = st.number_input("ENTER YOUR AGE: ",0,101)
 
-
+            SkinThickness = 10
             if a == "MALE":  # Male
                 if Age >= 1 and Age <= 9:
                     SkinThickness = random.uniform(5.0,12.1)
